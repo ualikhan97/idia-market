@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <title>Developer Exercise</title>
+      <!-- Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="description" content="Developer Exercise" />
+      <!-- CSS -->
+      <link
+         href="css/bootstrap.css"
+         rel="stylesheet"
+         type="text/css"
+         media="all"
+      />
+      <link
+         href="css/bootstrap.min.css"
+         rel="stylesheet"
+         type="text/css"
+         media="all"
+      />
+      <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+      <link
+         href="css/jquery.cart.css"
+         rel="stylesheet"
+         type="text/css"
+         media="all"
+      />
+      <link
+         href="css/font-awesome.css"
+         rel="stylesheet"
+         type="text/css"
+         media="all"
+      />
+      <!-- Icon -->
+      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+   </head>
+   <body>
+      <div class="header_nav">
+         <div class="loaf_header">
+            <label class="btn back_btn" onclick="history.back()">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </label>
+            <div class="logo">
+               <a href="#">
+                  <span>Soft</span>
+                  <p>Gr</p>
+                  <img src="images/header/globs.webp" alt="logo" />
+                  <p>up</p>
+               </a>
+            </div>
+            <input type="radio" name="slider" id="menu_btn" />
+            <input type="radio" name="slider" id="close_btn" />
+            <ul class="loaf_header_links">
+               <li><a href="#" class="loaf_header_links_line">Главная</a></li>
+               <li>
+                  <a href="#" class="desktop_item loaf_header_links_line"
+                     >Оборудование</a
+                  >
+                  <input type="checkbox" id="showProducts" />
+                  <label for="showProducts" class="mobile_item"
+                     >Оборудование</label
+                  >
+                  <div class="products_box">
+                     <div class="products_content">
+                        <div class="products_content_column">
+                           <img src="images/header/icon_1.webp" alt="Icons" />
+                        </div>
+                        <div class="products_content_column">
+                           <ul class="products_box_list">
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_1.webp"
+                                    >POS системы</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_2.webp"
+                                    >Компьютеры</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_3.webp"
+                                    >Сканеры штрих-кодов</a
+                                 >
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="products_content_column">
+                           <ul class="products_box_list">
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_4.webp"
+                                    >Принтеры чеков и этикеток</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_5.webp"
+                                    >Денежные ящики</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_6.webp"
+                                    >Весы электронные</a
+                                 >
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="products_content_column">
+                           <ul class="products_box_list">
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_7.webp"
+                                    >Терминалы</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_8.webp"
+                                    >Счетчики и детекторы</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    href="#"
+                                    data-image="images/header/icon_9.webp"
+                                    >Антикражное оборудование</a
+                                 >
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <a href="#" class="desktop_item loaf_header_links_line"
+                     >Программы</a
+                  >
+                  <input type="checkbox" id="showPrograms" />
+                  <label for="showPrograms" class="mobile_item"
+                     >Программы</label
+                  >
+                  <ul class="programs_list">
+                     <li>
+                        <a href="#"
+                           ><img src="images/header/1_1c.webp" alt="1c" />1С
+                           Розница</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#"
+                           ><img
+                              src="images/header/2_r_keeper.webp"
+                              alt="r_keeper"
+                           />R-keeper</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#"
+                           ><img
+                              src="images/header/3_umag.webp"
+                              alt="umag"
+                           />Umag</a
+                        >
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#" class="loaf_header_links_line">Автоматизация</a>
+               </li>
+               <li><a href="#" class="loaf_header_links_line">Отзывы</a></li>
+               <li><a href="#" class="loaf_header_links_line">О нас</a></li>
+               <li><a href="#" class="loaf_header_links_line">Контакты</a></li>
+            </ul>
+            <label for="menu_btn" class="btn menu_btn">
+               <i class="fa fa-align-justify" aria-hidden="true"></i>
+            </label>
+         </div>
+         <div class="boot_header">
+            <div class="boot_header_container">
+               <div class="burger_btn">
+                  <div class="burger_text">
+                     <span
+                        ><i class="fa fa-th-large fa-2x" aria-hidden="true"></i>
+                        <p>&nbsp; Каталог товаров</p></span
+                     >
+                     <span
+                        ><i class="fa fa-th-large fa-2x" aria-hidden="true"></i>
+                        <p>&nbsp; Каталог товаров</p></span
+                     >
+                  </div>
+               </div>
+               <div class="search_box">
+                  <span class="search_box_btn">
+                     <i class="fa fa-search"></i>
+                  </span>
+                  <label for="search_box_input"></label>
+                  <input
+                     class="search_box_input"
+                     autocomplete="off"
+                     id="search_box_input"
+                     type="text"
+                  />
+               </div>
+               <div class="contact_info">
+                  <div class="contact_info_btn">
+                     <span class="contact_city_name">Алматы</span>
+                     <span class="contact_info_arrow"></span>
+                     <span class="contact_city_number">
+                        <a href="#">
+                           &nbsp 8 (727)
+                           <span class="contact_city_number_b"
+                              >344-99-00</span
+                           ></a
+                        >
+                     </span>
+                     <div class="cont_icon_menu">
+                        <div
+                           class="cont_circle_0 fa fa-phone"
+                           aria-hidden="true"
+                        ></div>
+                        <div class="cont_circle_1"></div>
+                        <div class="cont_circle_2"></div>
+                        <div class="cont_circle_3"></div>
+                        <div class="cont_circle_4"></div>
+                     </div>
+                  </div>
+                  <div class="contact_drop_down">
+                     <div class="contact_drop_down_items">
+                        <div class="contact_drop_down_city">
+                           <span class="contact_drop_down_item_line"></span>
+                           <span
+                              class="contact_drop_down_item_city contact_drop_down_city_hidden"
+                              >Алматы</span
+                           >
+                        </div>
+                        <div class="contact_drop_down_item_number">
+                           <a href="#">
+                              +7 (701)
+                              <span class="contact_city_number_b"
+                                 >266-77-00</span
+                              ></a
+                           >
+                        </div>
+                     </div>
+                     <br />
+                     <div class="contact_drop_down_items">
+                        <div class="contact_drop_down_city">
+                           <span class="contact_drop_down_item_line"></span>
+                           <span class="contact_drop_down_item_city"
+                              >Астана</span
+                           >
+                        </div>
+                        <div class="contact_drop_down_item_number">
+                           <a href="#" class="contact_drop_down_mobile_hidden">
+                              &nbsp 8 (7172)
+                              <span class="contact_city_number_b"
+                                 >27-99-00</span
+                              ></a
+                           >
+                           <br class="contact_drop_down_mobile_hidden" />
+                           <a href="#">
+                              +7 (701)
+                              <span class="contact_city_number_b"
+                                 >511-22-00</span
+                              ></a
+                           >
+                        </div>
+                     </div>
+                     <br />
+                     <div class="contact_drop_down_items">
+                        <div class="contact_drop_down_city">
+                           <span class="contact_drop_down_item_line"></span>
+                           <span class="contact_drop_down_item_city"
+                              >Шымкент</span
+                           >
+                        </div>
+                        <div class="contact_drop_down_item_number">
+                           <a href="#" class="contact_drop_down_mobile_hidden">
+                              &nbsp 8 (7252)
+                              <span class="contact_city_number_b"
+                                 >39-99-00</span
+                              ></a
+                           >
+                           <br class="contact_drop_down_mobile_hidden" />
+                           <a href="#">
+                              +7 (701)
+                              <span class="contact_city_number_b"
+                                 >944-77-00</span
+                              ></a
+                           >
+                        </div>
+                     </div>
+                     <br />
+                  </div>
+               </div>
+               <div class="open_cart_btn" id="open_cart_btn">
+                  <img src="images/header/cart.webp" alt="Cart" />
+                  <p>Корзина</p>
+                  <span class="open_cart_number">2</span>
+               </div>
+            </div>
+         </div>
+         <div class="burger_category_menu">
+            <button class="burger_menu_close">
+               <div class="close-container">
+                  <div class="burger_menu_left"></div>
+                  <div class="burger_menu_right"></div>
+               </div>
+            </button>
+            <ul class="burger_menu_content">
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img src="images/header/icon_1s.webp" alt="pos" />
+                           <h3>POS системы</h3>
+                        </div>
+                        <div class="burger_category_arrow"></div>
+                     </ul>
+                  </a>
+                  <ul class="burger_category_children">
+                     <li>
+                        <a href="#">
+                           <img src="images/header/icon_1s_1.webp" alt="pos" />
+                           <h4>Сенсорные моноблоки</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="images/header/icon_1s_2.webp" alt="pos" />
+                           <h4>POS системы</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="images/header/icon_1s_3.webp" alt="pos" />
+                           <h4>Комплектующие</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img
+                              src="images/header/icon_2s.webp"
+                              alt="computer"
+                           />
+                           <h3>Компьютеры и комплектующие</h3>
+                        </div>
+                        <div class="burger_category_arrow"></div>
+                     </ul>
+                  </a>
+                  <ul class="burger_category_children">
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_2s_1.webp"
+                              alt="computer"
+                           />
+                           <h4>Блок системы</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_2s_2.webp"
+                              alt="computer"
+                           />
+                           <h4>Монитор и периферия</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_2s_3.webp"
+                              alt="computer"
+                           />
+                           <h4>Офисные стулья и кресла</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img
+                              src="images/header/icon_3s.webp"
+                              alt="scanner"
+                           />
+                           <h3>Сканеры штрих-кодов</h3>
+                        </div>
+                        <div class="burger_category_arrow"></div>
+                     </ul>
+                  </a>
+                  <ul class="burger_category_children">
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_3s_1.webp"
+                              alt="scanner"
+                           />
+                           <h4>Ручные сканеры штрих-кодов</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_3s_2.webp"
+                              alt="scanner"
+                           />
+                           <h4>Настольные сканеры штрих-кодов</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img
+                              src="images/header/icon_4s.webp"
+                              alt="printer"
+                           />
+                           <h3>Принтеры чеков и этикеток</h3>
+                        </div>
+                        <div class="burger_category_arrow"></div>
+                     </ul>
+                  </a>
+                  <ul class="burger_category_children">
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_4s_1.webp"
+                              alt="printer"
+                           />
+                           <h4>Принтеры чеков</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_4s_2.webp"
+                              alt="printer"
+                           />
+                           <h4>Принтеры этикеток</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img src="images/header/icon_5s.webp" alt="till" />
+                           <h3>Денежные ящики</h3>
+                        </div>
+                     </ul>
+                  </a>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img src="images/header/icon_6s.webp" alt="scale" />
+                           <h3>Весы электронные</h3>
+                        </div>
+                        <div class="burger_category_arrow"></div>
+                     </ul>
+                  </a>
+                  <ul class="burger_category_children">
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_6s_1.webp"
+                              alt="scale"
+                           />
+                           <h4>Весы без печати этикеток</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_6s_2.webp"
+                              alt="scale"
+                           />
+                           <h4>Весы с печатью этикеток</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img
+                              src="images/header/icon_7s.webp"
+                              alt="terminal"
+                           />
+                           <h3>Терминалы сбора данных</h3>
+                        </div>
+                     </ul>
+                  </a>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img
+                              src="images/header/icon_8s.webp"
+                              alt="banknotes"
+                           />
+                           <h3>Счетчики и детекторы банкнот</h3>
+                        </div>
+                        <div class="burger_category_arrow"></div>
+                     </ul>
+                  </a>
+                  <ul class="burger_category_children">
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_8s_1.webp"
+                              alt="banknotes"
+                           />
+                           <h4>Счетчики банкнот</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img
+                              src="images/header/icon_8s_2.webp"
+                              alt="banknotes"
+                           />
+                           <h4>Детекторы банкнот</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="burger_category_items">
+                  <a href="#">
+                     <ul class="burger_category_parent">
+                        <div class="burger_category_title">
+                           <img src="images/header/icon_9s.webp" alt="eas" />
+                           <h3>Антикражное оборудование</h3>
+                        </div>
+                        <div class="burger_category_arrow"></div>
+                     </ul>
+                  </a>
+                  <ul class="burger_category_children">
+                     <li>
+                        <a href="#">
+                           <img src="images/header/icon_9s_1.webp" alt="eas" />
+                           <h4>Радиочастотная антикражная система</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="images/header/icon_9s_2.webp" alt="eas" />
+                           <h4>Акустомагнитная антикражная система</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="overlap">
+            <div class="bubbles">
+               <span style="--i: 16"
+                  ><img src="images/header/icon_1s_2.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 36"
+                  ><img src="images/header/icon_7s.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 27"
+                  ><img src="images/header/icon_3s_1.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 31"
+                  ><img src="images/header/icon_8s_1.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 21"
+                  ><img src="images/header/icon_5s.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 19"
+                  ><img src="images/header/icon_9s.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 41"
+                  ><img src="images/header/icon_2s.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 36"
+                  ><img src="images/header/icon_1s_1.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 15"
+                  ><img src="images/header/icon_6s.webp" alt="Bubble"
+               /></span>
+               <span style="--i: 26"
+                  ><img src="images/header/icon_4s.webp" alt="Bubble"
+               /></span>
+            </div>
+         </div>
+      </div>
+      <div class="page-head_agile_info_w3l">
+         <div class="container">
+            <h1>Офисные стулья и кресла в Алматы</h1>
+         </div>
+      </div>
+      <div class="container">
+         <div class="page_navigation">
+            <ul class="bread_crumbs">
+               <li><a href="#">Главная</a></li>
+               <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+               <li><a href="#">Оборудование</a></li>
+               <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+               <li>Офисные стулья и кресла</li>
+            </ul>
+
+            <!------------------------------------------------------------------------------------------------------------->
+
+            <div class="sorting_crumbs">
+               <div class="sorting_crumbs_title">Сортировать:</div>
+               <div class="sorting_crumbs_select">
+                  <div class="sorting_selected">
+                     <span>по возрастанию цены</span>
+                     <i
+                        class="fa fa-chevron-down sorting_arrow"
+                        aria-hidden="true"
+                     ></i>
+                  </div>
+                  <ul class="sorting_option">
+                     <li class="sorting_option-li" id="price-asc">
+                        по возрастанию цены
+                     </li>
+                     <li class="sorting_option-li" id="price-desc">
+                        по убыванию цены
+                     </li>
+                     <li class="sorting_option-li" id="code">по коду</li>
+                     <li class="sorting_option-li" id="title">по названию</li>
+                  </ul>
+               </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------------------->
+         </div>
+
+         <div class="col-md-8 products-right">
+            <div class="page_title">
+               <h2>Офисные стулья и кресла</h2>
+               <hr />
+            </div>
+            <div class="product_items" id="computerChairList_____SHOW">
+               <!-- ---------------------------------------- PRODUCTS LIST -------------------------------------------- -->
+            </div>
+         </div>
+         <div class="col-md-4 products-left">
+            <div class="tree_view_nav">
+               <p class="tree_view_title">Каталог</p>
+               <ul class="tree_view_list">
+                  <!-- -------------------------------------- TREE VIEW LIST ----------------------------------------- -->
+               </ul>
+            </div>
+            <div class="metal_group">
+               <a href="#" target="_blank">
+                  <img src="images/metalgroup.gif" alt="MetalGroup" />
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="reasons_buy">
+         <div class="page_title">
+            <h3>Причины купить сенсорные моноблоки у нас</h3>
+            <hr />
+         </div>
+         <div class="reasons_buy_container">
+            <div class="reasons_buy_container_items reasons_buy_first">
+               <div class="reasons_block reasons_block_first">
+                  <div class="reasons_icons_first">
+                     <div class="first_block_cloud"></div>
+                     <div class="first_block_car">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                     </div>
+                     <div class="first_block_road"></div>
+                  </div>
+               </div>
+               <div class="reasons_title">
+                  <h5>Бесплатная Доставка</h5>
+                  <p>
+                     Оперативная доставка - БЕСПЛАТНО. Осуществляется доставка
+                     во все регионы РК.
+                  </p>
+               </div>
+            </div>
+            <div class="reasons_buy_container_items reasons_buy_second">
+               <div class="reasons_block reasons_block_second">
+                  <div class="reasons_icons_second">
+                     <div class="second_block_cog_one">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                     </div>
+                     <div class="second_block_cog_two">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                     </div>
+                     <div class="second_block_cog_three">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="reasons_title">
+                  <h5>Сервисное обслуживание</h5>
+                  <p>
+                     Технические специалисты помогут вам настроить оборудование
+                     под ваши требования
+                  </p>
+               </div>
+            </div>
+            <div class="reasons_buy_container_items reasons_buy_third">
+               <div class="reasons_block reasons_block_third">
+                  <div class="reasons_icons_third">
+                     <div class="third_block_cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                     </div>
+                     <div class="third_block_keyboard">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                     </div>
+                     <div class="third_block_mobile">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                     </div>
+                     <div class="third_block_tv">
+                        <i class="fa fa-television" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="reasons_title">
+                  <h5>Огромный выбор товара</h5>
+                  <p>
+                     У нас есть все виды оборудования для автоматизации любого
+                     вида торговли
+                  </p>
+               </div>
+            </div>
+            <div class="reasons_buy_container_items reasons_buy_forth">
+               <div class="reasons_block reasons_block_forth">
+                  <div class="reasons_icon_forth">
+                     <div class="forth_block_one">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                     </div>
+                     <div class="forth_block_two">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                     </div>
+                     <div class="forth_block_three">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="reasons_title">
+                  <h5>Квалифицированные специалисты</h5>
+                  <p>
+                     Наши сотрудники владеют умением и навыками для качественной
+                     работы с клиентами
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- JS -->
+      <script src="js/jquery-1.11.3.min.js"></script>
+      <script src="js/harvest.js"></script>
+
+      <script src="js/bootstrap.js"></script>
+      <script src="js/jquery.cart.js"></script>
+   </body>
+</html>
