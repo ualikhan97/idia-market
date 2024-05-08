@@ -188,6 +188,9 @@ function renderCartItems() {
                ".jqcart_subtotal strong"
             );
             totalElement.textContent = formatterCart(calculateTotal(cart));
+
+            saveCartToLocalStorage();
+            updatedCartNumber();
          }
       });
    });
