@@ -131,6 +131,8 @@ document
       soringOptionElement.addEventListener("click", () => {
          computerChairList.innerHTML = "";
 
+         // console.log(soringOptionElement.id);
+
          switch (soringOptionElement.id) {
             case "price-asc":
                displayList(sortByPriceAsc(data), computerChairList);
